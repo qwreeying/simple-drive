@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'master'
+      - "master"
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   docker:

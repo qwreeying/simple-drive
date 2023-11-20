@@ -1,13 +1,18 @@
 {
-  "name": "simple-drive",
-  "version": "1.0.0",
-  "description": "A simple web tech based drive system",
-  "main": "dist/index.js",
-  "repository": "https://github.com/qwreey75/simple-drive",
-  "author": "qwreey75@gmail.com",
-  "license": "MIT",
-  "private": false,
-  "scripts": {
-    "dev": "pnpm run -r --parallel dev"
-  }
+	"name": "simple-drive",
+	"version": "1.0.0",
+	"description": "A simple web tech based drive system",
+	"main": "dist/index.js",
+	"repository": "https://github.com/qwreey75/simple-drive",
+	"author": "qwreey75@gmail.com",
+	"license": "MIT",
+	"private": false,
+	"scripts": {
+		"dev": "pnpm run -r --parallel dev",
+		"lint": "",
+		"format": "prettier --ignore-path .gitignore -w ."
+	},
+	"devDependencies": {
+		"prettier": "^3.1.0"
+	}
 }

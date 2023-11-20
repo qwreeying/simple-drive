@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "0.0.1",
   "scripts": {
-    "start": "",
+    "dev": "tsup --watch --onSuccess 'node dist/index.js'",
     "prepack": "tsup"
   },
   "dependencies": {

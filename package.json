@@ -9,10 +9,13 @@
 	"private": false,
 	"scripts": {
 		"dev": "pnpm run -r --parallel dev",
-		"lint": "",
-		"format": "prettier --ignore-path .gitignore -w ."
+		"lint": "pnpm run -r --parallel lint",
+		"format": "prettier --ignore-path .gitignore -w .",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
+		"husky": "^8.0.0",
+		"lint-staged": "^15.1.0",
 		"prettier": "^3.1.0"
 	}
 }

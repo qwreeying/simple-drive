@@ -7,6 +7,9 @@
 		"lint": "eslint ."
 	},
 	"dependencies": {
+		"@fastify/cookie": "^9.2.0",
+		"@fastify/session": "^10.5.0",
+		"@fastify/static": "^6.12.0",
 		"@fastify/type-provider-typebox": "^3.5.0",
 		"@sinclair/typebox": "^0.31.28",
 		"dotenv": "^16.3.1",

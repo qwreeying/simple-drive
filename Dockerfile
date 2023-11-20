@@ -36,4 +36,4 @@ RUN corepack enable && \
 WORKDIR /app
 COPY --from=frontend-builder dist static
 
-CMD ["pnpm", "start"]
+CMD ["node", "dist/index.js"]

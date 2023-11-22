@@ -17,3 +17,4 @@ rules:
 ignorePatterns:
   - dist
   - .eslintrc.cjs
+  - schema.ts

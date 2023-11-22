@@ -1,0 +1,4 @@
+{
+	"extends": ["stylelint-config-recommended", "stylelint-config-tailwindcss", "@linaria/stylelint"],
+	"customSyntax": "@linaria/postcss-linaria"
+}

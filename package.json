@@ -7,6 +7,7 @@
 	"license": "MIT",
 	"private": false,
 	"scripts": {
+		"build": "pnpm run -r --parallel build",
 		"dev": "pnpm run -r --parallel dev",
 		"lint": "pnpm run -r --parallel lint",
 		"format": "prettier --ignore-path .gitignore -w .",

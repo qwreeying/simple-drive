@@ -5,8 +5,8 @@ services:
     restart: always
     iamge: ghcr.io/qwreeying/simple-drive:latest
     volumes:
-      ./drive:/app/drive
-      ./database.db:/app/database.db
+      ./drive:/data/files
+      ./database.db:/data/data.db
     healthcheck:
       test: "curl http://localhost:3000/healthcheck"
       interval: 5s

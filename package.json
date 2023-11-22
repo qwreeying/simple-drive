@@ -8,7 +8,7 @@
 	"private": false,
 	"scripts": {
 		"build": "pnpm run -r --parallel build",
-		"dev": "DB=database.db NODE_ENV=development pnpm run -r --parallel dev",
+		"dev": "DRIVE=drive DB=database.db NODE_ENV=development pnpm run -r --parallel dev",
 		"lint": "pnpm run -r --parallel lint",
 		"format": "prettier --ignore-path .gitignore -w .",
 		"prepare": "husky install"

@@ -4,7 +4,8 @@
 	"scripts": {
 		"dev": "tsup --watch --onSuccess 'node dist/index.js'",
 		"prepack": "tsup",
-		"lint": "eslint ."
+		"lint": "eslint .",
+		"build": "tsup"
 	},
 	"dependencies": {
 		"@fastify/cookie": "^9.2.0",

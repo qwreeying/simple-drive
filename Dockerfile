@@ -34,6 +34,11 @@ RUN corepack enable && \
     pnpm i --production
 
 WORKDIR /app
-COPY --from=frontend-builder dist static
+COPY --from=frontend-builder /base/frontend/dist static
+
+ENV PORT="3000"
+ENV NODE_ENV="production"
+ENV DRIVE="/app/drive"
+ENV DB="/app/database.db"
 
 CMD ["node", "dist/index.js"]

@@ -25,3 +25,7 @@
 
 # Pack file
 **/*.tgz
+
+# Datas
+drive
+**/*.db

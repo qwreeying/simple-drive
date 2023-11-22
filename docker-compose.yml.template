@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+  web:
+    restart: always
+    iamge: ghcr.io/qwreeying/simple-drive:latest
+    volumes:
+      ./drive:/app/drive
+      ./database.db:/app/database.db
+    healthcheck:
+      test: "curl http://localhost:3000/healthcheck"
+      interval: 5s
+      retries: 20
+    ports:
+      - "9105:3000"

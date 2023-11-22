@@ -18,6 +18,7 @@ export const users = sqliteTable("users", {
 	id: integer("id", { mode: "number" }).primaryKey({ autoIncrement: true }),
 	username: text("username"),
 	createdAt: integer("createdAt", { mode: "timestamp" }),
+    roles: text("roles", { mode: "json" }).$type<number[]>()
 })
 
 export const roles = sqliteTable("roles", {

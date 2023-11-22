@@ -1,7 +1,7 @@
 import { drizzle } from "drizzle-orm/better-sqlite3"
 import Database from "better-sqlite3"
 
-if (typeof process.env.DB === "string") {
+if (typeof process.env.DB !== "string") {
 	process.exit(1)
 }
 

@@ -5,7 +5,8 @@
 		"dev": "tsup --watch --onSuccess 'node dist/index.js'",
 		"prepack": "tsup",
 		"lint": "eslint .",
-		"build": "tsup"
+		"build": "tsup",
+		"drizzle:studio": "DB=../database.db drizzle-kit studio --port 3001"
 	},
 	"dependencies": {
 		"@fastify/cookie": "^9.2.0",

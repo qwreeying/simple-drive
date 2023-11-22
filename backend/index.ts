@@ -1,6 +1,7 @@
 import { configDotenv } from "dotenv"
+import migrate from "./src/migrate"
+
 configDotenv()
-// import db from "src/db"
-// import migrate from "src/migrate"
+migrate()
 
 // import fastify from "fastify"

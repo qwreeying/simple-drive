@@ -24,7 +24,7 @@ RUN pnpm run build
 # Main image
 FROM $NODE_TAG AS runner
 
-COPY --from=backend-builder pack.tgz .
+COPY --from=backend-builder /base/backend/pack.tgz pack.tgz
 
 RUN corepack enable && \
     tar xvf pack.tgz && \
